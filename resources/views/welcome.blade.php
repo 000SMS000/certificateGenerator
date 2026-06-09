@@ -11,10 +11,10 @@
     <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-lg">
 
         <h1 class="text-2xl font-bold text-center mb-6">
-            🎓 Certificate Generator
+            Certificate Generator
         </h1>
 
-        <form method="POST" action="#">
+        <form method="POST" action="{{ route('certificate.generate') }}">
             @csrf
 
             <!-- Name -->
