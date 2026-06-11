@@ -26,6 +26,6 @@ class CertificateController extends Controller
             'date' => $request->date,
         ]);
 
-        return $pdf->stream('certificate.pdf');
+        return $pdf->download('pdf');
     }
 }
