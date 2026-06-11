@@ -11,7 +11,7 @@
         }
 
         .certificate{
-            border:8px solid #1e40af;
+            border:8px solid black;
             padding:50px;
         }
 
