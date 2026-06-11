@@ -21,4 +21,6 @@ RUN mkdir -p database && touch database/database.sqlite
 
 RUN chmod -R 777 database storage bootstrap/cache
 
+RUN chown -R www-data:www-data /app
+
 CMD ["sh", "-c", "php artisan serve --host=0.0.0.0 --port=${PORT:-8000}"]
