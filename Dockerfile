@@ -17,4 +17,8 @@ COPY . .
 
 RUN composer install --no-interaction --prefer-dist
 
+RUN mkdir -p database && touch database/database.sqlite
+
+RUN chmod -R 777 database storage bootstrap/cache
+
 CMD ["sh", "-c", "php artisan serve --host=0.0.0.0 --port=${PORT:-8000}"]
