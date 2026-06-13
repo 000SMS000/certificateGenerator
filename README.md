@@ -15,8 +15,7 @@ Certificate Generator is a Laravel-based web application that allows users to ge
 * Instant certificate download
 * Dockerized application
 * Production deployment on Render
-* No database required
-
+* 
 ---
 
 ## Tech Stack
@@ -146,8 +145,6 @@ docs/screenshots/
 
 ## Author
 
-Mahmoud Ahmed
+Mahmoud Srour
 
 Islamic University of Gaza
-
-Software Development / Information Technology
