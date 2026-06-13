@@ -3,32 +3,151 @@
 # Certificate Generator
 
 ## Description
-A simple Laravel web application that generates professional PDF certificates based on user input.
+
+Certificate Generator is a Laravel-based web application that allows users to generate professional PDF certificates instantly through a simple and user-friendly interface.
+
+---
 
 ## Features
-- User-friendly UI
-- Generate PDF certificates
-- Download certificate instantly
-- Dockerized application
+
+* User-friendly interface
+* Generate professional PDF certificates
+* Instant certificate download
+* Dockerized application
+* Production deployment on Render
+* No database required
 
 ---
 
 ## Tech Stack
-- Laravel
-- PHP 8.4
-- DomPDF
-- Tailwind CSS
-- Docker
+
+* Laravel 12
+* PHP 8.4
+* DomPDF
+* Tailwind CSS
+* Docker
+* Render
 
 ---
 
-## Run with Docker
+## Live Demo
 
-### Build image
-docker build -t certificate-generator .
+https://certificategenerator-y6tm.onrender.com
 
-### Run container
-docker run -p 8000:8000 certificate-generator
+---
 
-### Open in browser
+## Local Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/000SMS000/certificateGenerator.git
+cd certificateGenerator
+```
+
+Install dependencies:
+
+```bash
+composer install
+```
+
+Create environment file:
+
+```bash
+cp .env.example .env
+```
+
+Generate application key:
+
+```bash
+php artisan key:generate
+```
+
+Run the application:
+
+```bash
+php artisan serve
+```
+
+Open:
+
+```text
 http://localhost:8000
+```
+
+---
+
+## Docker Deployment
+
+Build the Docker image:
+
+```bash
+docker build -t certificate-generator .
+```
+
+Run the container:
+
+```bash
+docker run -p 8000:8000 certificate-generator
+```
+
+Open:
+
+```text
+http://localhost:8000
+```
+
+---
+
+## Production Deployment
+
+The application was deployed using Docker on Render.
+
+Deployment URL:
+
+https://certificategenerator-y6tm.onrender.com
+
+Environment:
+
+* PHP 8.4
+* Laravel 12
+* Docker
+* Render Cloud Platform
+
+Storage:
+
+* File-based sessions
+* No database required
+
+---
+
+## Deployment Challenges
+
+During deployment, several issues were encountered and resolved:
+
+* APP_KEY configuration
+* SQLite configuration issues
+* Session driver configuration
+* Environment variables setup on Render
+
+All issues were successfully resolved, and the application is now running in production.
+
+---
+
+## Screenshots
+
+Deployment screenshots are available in:
+
+```text
+docs/screenshots/
+```
+
+---
+
+## Author
+
+Mahmoud Ahmed
+
+Islamic University of Gaza
+
+Software Development / Information Technology
